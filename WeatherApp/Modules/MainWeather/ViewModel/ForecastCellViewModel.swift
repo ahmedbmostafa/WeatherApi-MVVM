@@ -19,7 +19,7 @@ class ForecastCellViewModel {
     
     
     init(_ forecastday: Forecastday?){
-        self.temp = "\(forecastday?.day?.mintempF ?? 0) /" + "\(forecastday?.day?.maxtempF ?? 0)"
+        self.temp = "\(forecastday?.day?.mintempF ?? 0) / " + "\(forecastday?.day?.maxtempF ?? 0)"
         self.day = self.getCurrentDate(forecastday: forecastday)
         self.icon = generateIcon(path: forecastday?.day?.condition?.icon ?? "")
     }

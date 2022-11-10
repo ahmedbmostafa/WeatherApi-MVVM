@@ -105,7 +105,7 @@ class WeatherViewModel: WeatherViewModelProtocol{
     }
     
     
-    private func fetchForecast(countery:String) {
+     func fetchForecast(countery:String) {
         dataProvider.fetchForecast(countery: countery)
     }
     
